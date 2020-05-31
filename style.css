@@ -15,21 +15,24 @@ body{
 .mobilapp{
     width: 80px;
     height: 80px;
-    position: absolute;
+    margin-left: 70px;
 }
 .menu:hover{
     color: red;
 }
 .navbar{
-    padding: 70px 0 0 0;
+    padding: 10px 0 0 0;
     width: 100%;
     z-index: 9999;
     background:  rgba(255,255,255,0.3);
 }
+.wrap{
+    padding: 20px;
+}
 .nav-item a{
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
-    margin-left:10px; 
+    margin-left:50px; 
     font-weight: bold;
 }
 .header__menu{
@@ -39,30 +42,39 @@ body{
     width: 15px;
     height: 18px;
 }
-.nav-link-footer{
+.link-footer{
     color:#6B7F9A;
-    font-size: 13px;
+    font-size: 14px;
     padding:0;
     margin:0;
     display: block;
 }
-.nav-link {
+.menu__link{
+    margin-top: 30px;
+    margin-right: 15px;
+}
+.link {
     color:white;
-    font-size: 13px;
+    font-size: 14px;
     padding:0;
     margin:0;
-}
-.header__tel{
-    margin-left: 80px;
-}
-.header__tel a{
+    display: block;
     font-weight: bold;
 }
-.header__tel a:hover{
-    font-size: 16px;
+.link:hover{
+   
+    color:white;
+}
+.link-footer:hover{
+    font-size: 17px;
     color:#d24055;
+    font-weight: bold;
     /* transition: all 0.4s ease; */
   
+}
+.wrapper{
+    background: rgba(255,255,255,0.3);
+    padding-top:20px;
 }
 h1{
     color:#FFFCF9;
@@ -646,11 +658,16 @@ footer{
 @media screen and (max-width:1200px){
     .nav-item a{
         font-size: 11px;
-     
         margin-left: 1px;
      
       
     }
+    
+    /* .header {
+      background-size:auto;
+    } */
+    
+    
     
 }
 
@@ -681,13 +698,35 @@ footer{
     .header__tel{
         text-align: center;
     }
-    }
+    .footer__direction {
+       
+        text-align: center;
+           }}
     @media screen and (max-width:475px){
     .activities__img{
         width: 200px;
 }
-   
-
 
 
     }
+    @media (min-width: 320px) and (max-width: 767px) {
+       .navbar-toggler{
+                padding: 10px;
+                border-radius: 3px;
+        /*      background-color: #CFD1D2;*/
+                background: linear-gradient(#d24055, #c92f45);
+                text-align: left;
+            }
+            .wrap{
+                
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+         .navbar-toggler{
+                padding: 20px;
+                color: rgb(255, 0, 0);
+                border-radius: 3px;
+                background: linear-gradient(#d24055, #c92f45);
+                text-align: left;
+            }
+        }
