@@ -7,7 +7,7 @@ body{
 .header{
     background-image: url(assets/img/fhoto-t.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size:cover;
     padding-bottom: 200px;
     background-attachment: fixed;
@@ -62,7 +62,6 @@ body{
     font-weight: bold;
 }
 .link:hover{
-   
     color:white;
 }
 .link-footer:hover{
@@ -102,7 +101,6 @@ h1{
     padding-top: 15px;
 }
 .form{
-  
     background-image: url(assets/img/depositphotos.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -150,14 +148,13 @@ h2{
     font-family: 'Open Sans', sans-serif;
     color:#6B7F9A;
     text-align: justify;
-  
+
 }
 .primary__activity-idea{
     font-size:16px;
     font-family: 'Open Sans', sans-serif;
     color:#6B7F9A;
     text-align: left;
-   
     text-transform: uppercase;
     padding:15px 0 15px; 
 }
@@ -176,10 +173,7 @@ h2{
     color:white;
     margin-right: 40px;
     margin-bottom:30px;
-  
 }
-
-
 .btn-form{
     display: inline-block;
     color: rgba(255,255,255,1.8);
@@ -261,7 +255,6 @@ h2{
 html {
   height: 100%;
 }
-
 body {
   background-color: var(--bodyBackgroundColor);
   font-family: var(--bodyFontFamily);
@@ -269,7 +262,6 @@ body {
   margin: 0;
   min-height: 100%;
 }
-
 /* vendor/ui-accordion.css */
 
 :root {
@@ -287,7 +279,6 @@ body {
   --accordionContentMargin: 0.5rem;
   --accordionContentPadding: 0.5rem;
 }
-
 .ui-accordion {
   margin-bottom: var(--accordionMarginBottom);
 }
@@ -299,7 +290,6 @@ body {
   margin: 0;
   padding: var(--accordionHeaderPaddingVertical) var(--accordionHeaderPaddingHorizontal);
 }
-
 .ui-accordion-header-icon {
   background-image: url('https://cdn.rawgit.com/marcobiedermann/playground/master/ui/accordion/jquery-ui-accordion/source/assets/images/accordion.svg');
   background-size: 100%;
@@ -366,7 +356,6 @@ body {
     bottom: 0px;
 
 } */
-
 .activities__btn {
     position: relative;
     color: white;
@@ -383,19 +372,16 @@ body {
     background-position: 200% 0, 0 0;
     box-shadow: rgba(0,0,0,.3) 0 2px 5px;
   } 
-  
   .activities__btn:active {
     top: 1px;
     box-shadow: none;
   }
-
   .activities__btn:hover {
     transition: .5s linear;
     background-position: -200% 0, 0 0;
   }
 
 .activities__layer{
-   
     position: relative;
     border:0;
     margin-top: 50px;
@@ -412,7 +398,6 @@ body {
     color:#6B7F9A;
     text-align: right;
     font-weight: bold;
-
 }
 .advantages__list-p{
     font-size:14px;
@@ -437,7 +422,6 @@ body {
 .contacts{
     padding:30px;
     background-color: #f7f9f9;
-    
 }
 .contacts__title{
     font-size:18px;
@@ -456,12 +440,9 @@ body {
     color:#6B7F9A;
     text-decoration: underline;
 }
-
 footer{
-   
     background: #262626;
     padding:10px;
-  
 }
 .footer__direction{
     font-size:10px;
@@ -470,11 +451,9 @@ footer{
     text-align: left;
     margin-bottom: 0;
 }
-
 .advantages__icon{
     margin-left: 10px;
     color:#6B7F9A;
-
 }
 .advantages__list-icon{
     margin-right: 10px;
@@ -492,8 +471,6 @@ footer{
 .contact__icon{
     color: red;
 }
-
-
 .vk,.vb,.face,.inst,.wh,.tg{
     width: 25px;
     height: 25px;
@@ -503,8 +480,6 @@ footer{
     line-height: 25px;
     text-align: center;
     letter-spacing: -0.5px;
-   
-   
 }
 .vb{
     background: #9B51E0;
@@ -598,7 +573,6 @@ footer{
     border:none;
     padding: 15px;
     box-shadow: 0px 0px 27px -3px rgba(22,139,136,1);
-
 }
 .group__in:invalid{
     border:#be1e23 1px solid;
@@ -609,7 +583,6 @@ footer{
     width: 285px;
     border:#be1e23 1px solid;
 }
-
 .group__btn{
     cursor: pointer;
     padding: 20px 30px;
@@ -618,7 +591,6 @@ footer{
     background-color: #d24055;
     border:none;
     color:white;
-
 }
 .group__btn:focus{
     outline: none;
@@ -659,16 +631,23 @@ footer{
     .nav-item a{
         font-size: 11px;
         margin-left: 1px;
-     
-      
     }
-    
-    /* .header {
-      background-size:auto;
-    } */
-    
-    
-    
+    .header {
+       background-position: top left;
+    }
+    h1{
+        margin:25px;
+    }
+    .navbar,
+    .wrapper{
+        background: rgba(0,0,0,0);
+        padding: 0;
+
+    }
+    .link{
+        color:#d24055;
+    }
+   
 }
 
 @media screen and (max-width:992px){
@@ -699,16 +678,13 @@ footer{
         text-align: center;
     }
     .footer__direction {
-       
         text-align: center;
-           }}
-    @media screen and (max-width:475px){
-    .activities__img{
-        width: 200px;
-}
-
-
     }
+    .navbar-nav{
+        padding-top: 20px;
+    }   
+        }
+  
     @media (min-width: 320px) and (max-width: 767px) {
        .navbar-toggler{
                 padding: 10px;
@@ -717,12 +693,10 @@ footer{
                 background: linear-gradient(#d24055, #c92f45);
                 text-align: left;
             }
-            .wrap{
-                
-            }
+            
         }
-        @media (min-width: 768px) and (max-width: 991px) {
-         .navbar-toggler{
+    @media (min-width: 768px) and (max-width: 991px) {
+        .navbar-toggler{
                 padding: 20px;
                 color: rgb(255, 0, 0);
                 border-radius: 3px;
@@ -730,3 +704,31 @@ footer{
                 text-align: left;
             }
         }
+    @media screen and (max-width:475px){
+        .activities__img  {
+                width: 200px;
+            }
+        }
+        
+    @media screen and (max-width:375px){
+        .fix{
+                right: 40px;
+                bottom: 4px;
+            }
+        .group__btn{
+                padding: 10px 20px;
+            }
+        .form-group2{
+            padding:0;
+        }
+        }
+    @media screen and (max-width:320px){
+        h1{
+            font-size: 32px;
+        }
+        .primary__title{
+            font-size: 24px;
+        }
+    }
+
+        
