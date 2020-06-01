@@ -633,9 +633,9 @@ footer{
         margin-left: 1px;
     }
     .header {
+   
+        background-position: top left;
        
-      background-position: top left;
-
     }
     h1{
         margin:25px;
@@ -695,6 +695,7 @@ footer{
                 background: linear-gradient(#d24055, #c92f45);
                 text-align: left;
             }
+
             
         }
     @media (min-width: 768px) and (max-width: 991px) {
@@ -710,22 +711,26 @@ footer{
         .activities__img  {
                 width: 200px;
             }
+        footer{
+            padding-bottom: 40px;
+        }
+        .fix{
+            bottom:0;
+        }
+        }
+        
+    @media screen and (max-width:375px){
+        .fix{
+            right: 35px;
+            bottom: 0;
+                
+            }
         .group__btn{
                 padding: 10px 20px;
             }
         .form-group2{
             padding:0;
         }
-
-        }
-        
-    @media screen and (max-width:375px){
-        .fix{
-            right: 35px;
-            bottom: 2px;
-                
-            }
-        
         }
     @media screen and (max-width:320px){
         h1{
