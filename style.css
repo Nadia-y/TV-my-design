@@ -633,7 +633,9 @@ footer{
         margin-left: 1px;
     }
     .header {
-       background-position: top left;
+       
+      background-position: top left;
+
     }
     h1{
         margin:25px;
@@ -656,7 +658,7 @@ footer{
     .left,
     .left-p,
     .advantages__icon
-  {
+   {
         text-align: center;
       }
     .header__tel{
@@ -708,19 +710,22 @@ footer{
         .activities__img  {
                 width: 200px;
             }
-        }
-        
-    @media screen and (max-width:375px){
-        .fix{
-                right: 40px;
-                bottom: 4px;
-            }
         .group__btn{
                 padding: 10px 20px;
             }
         .form-group2{
             padding:0;
         }
+
+        }
+        
+    @media screen and (max-width:375px){
+        .fix{
+            right: 35px;
+            bottom: 2px;
+                
+            }
+        
         }
     @media screen and (max-width:320px){
         h1{
