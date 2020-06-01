@@ -637,7 +637,7 @@ footer{
     }
     .header {
         /* background-position: top left; */
-    background:url(assets/img/fhoto-t-mmm.png) 100% 100% /cover no-repeat fixed;
+    background:url(assets/img/photo-telecommunication.jpg) 100% 100% /cover no-repeat fixed;
        
     }
     h1{
@@ -688,11 +688,7 @@ footer{
     .navbar-nav{
         padding-top: 20px;
     }   
-    .header {
-        /* background-position: top left; */
-    background:url(assets/img/fhoto-t-mmm.png) 100% 100% /cover no-repeat fixed;
-       
-    }
+    
         }
   
     @media (min-width: 320px) and (max-width: 767px) {
