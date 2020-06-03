@@ -204,21 +204,21 @@
         <div class="row">
           <div class="col-lg-12">
             <h2>Оставьте заявку</h2>
-              <form>
+              <form id="form_one" class="form_different" action="" method="POST"> 
                   <div class="form-row"> 
                       <div class="form-group col-lg-4">
-                        <input type="text" class="form-control " id="inputName" placeholder="Ваше имя" required>
+                        <input type="text" class="form-control" name="name" id="inputName" placeholder="Ваше имя" required>
                       </div>
                       <div class="form-group col-lg-4">
-                        <input type="text" class="form-control" id="inputName" placeholder="Ваш телефон" required>
+                        <input type="text" class="form-control" name="phone" id="inputName" placeholder="Ваш телефон" required>
                       </div>
                       <div class="form-group col-lg-4">
-                        <input type="email" class="form-control" id="inputEmail4" placeholder="Ваш e-mail">
+                        <input type="email" class="form-control" name="email" id="inputEmail4" placeholder="Ваш e-mail">
                       </div>   
                   </div>
                   <div class="form-group2">
-                      <button type="button" class="btn-form btn ">Оплатить услуги</button>
-                      <button type="button" class="btn-form btn ">Вызвать мастера</button>
+                      <button  class="btn-form btn ">Оплатить услуги</button>
+                      <button  class="btn-form btn ">Вызвать мастера</button>
                   </div>        
           </form>
     </div>
@@ -403,24 +403,30 @@
       </div>
     </footer>
     <!-- Form-->
+
+    <!-- <input type="hidden" name="project_name" value="TV">
+    <input type="hidden" name="admin_email" value="nadia-2501@yandex.ru">
+    <input type="hidden" name="form_subject" value="Заказ звонка"> -->
+
     <button onclick="show('block')" class="group__btn fix" >  Заказать звонок </button>
     <div id="filter" onclick="show('none')"></div>
     <div id="modal">
-      <form class="form__modal" action="">
+      
+      <form id="form" class="form__modal" >
         <h5 class="form__title">
           Заказать звонок
         </h5>
         <p class="form__text"> Мы свяжемся с Вами в ближайщее время</p>
         <div class="group">
           <label class="group__lab" for="">Имя:</label>
-          <input class="group__in" type="text required" >
+          <input class="group__in" type="text" name="name"  required >
         </div>
         <div class="group">
           <label class="group__lab"  for="">Номер телефона:</label>
-          <input class="group__in"  type="tel required">
+          <input class="group__in"  type="tel" name="phone" required>
         </div>
         <div class="group">
-        <button class="group__btn">  Отправить</button>  
+          <button class="group__btn">  Отправить</button>  
       </div>
     </form>>
     </div>

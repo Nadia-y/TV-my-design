@@ -12,8 +12,6 @@ body{
     padding-bottom: 200px;
     background-attachment: fixed;
    
-
-
 }
 .mobilapp{
     width: 80px;
@@ -37,7 +35,9 @@ body{
     text-transform: uppercase;
     margin-left:50px; 
     font-weight: bold;
-}
+    }
+   
+
 .header__menu{
     margin-right: 30px;
 }
@@ -51,6 +51,7 @@ body{
     padding:0;
     margin:0;
     display: block;
+    text-align: center;
 }
 .menu__link{
     margin-top: 30px;
@@ -122,7 +123,7 @@ h2{
    outline:none ;
 }
 .form-group2 {
-  padding:50px;
+  margin:50px;
   text-align: center;
 
 }
@@ -467,6 +468,7 @@ footer{
 }
 .contacts__mail{
     margin-top:25px;
+    text-align: center;
 }
 .contacts__mail a{
     color:#6B7F9A;
@@ -636,8 +638,8 @@ footer{
         margin-left: 1px;
     }
     .header {
-        /* background-position: top left; */
-    background:url(assets/img/photo-telecommunication.jpg) 100% 100% /cover no-repeat fixed;
+        background-position: top left;
+    /* background:url(assets/img/photo-telecommunication.jpg) 100% 100% /cover no-repeat fixed; */
        
     }
     h1{
@@ -652,7 +654,6 @@ footer{
     .link{
         color:#d24055;
     }
-   
 }
 
 @media screen and (max-width:992px){
@@ -660,7 +661,9 @@ footer{
     .advantages__list-p,
     .left,
     .left-p,
-    .advantages__icon
+    .advantages__icon,
+    .link-footer,
+    .contacts__mail
    {
         text-align: center;
       }
@@ -688,7 +691,12 @@ footer{
     .navbar-nav{
         padding-top: 20px;
     }   
-    
+    .navbar-nav li{
+      border-top: 1px solid #d4dae2;
+    }   
+    .nav-item a{
+        margin-left: 35px;
+    }
         }
   
     @media (min-width: 320px) and (max-width: 767px) {
@@ -709,6 +717,7 @@ footer{
                 border-radius: 3px;
                 background: linear-gradient(#d24055, #c92f45);
                 text-align: left;
+                margin-left: 35px;
             }
         }
     @media screen and (max-width:475px){
@@ -721,19 +730,38 @@ footer{
         .fix{
             bottom:2px;
         }
+        .menu__link{
+            padding-left: 35px;
+        }
+        .navbar-toggler{
+            margin-left: 35px;
+        }
+        .nav-item a{
+            margin-left: 35px;
+        }
         }
         
     @media screen and (max-width:375px){
         .fix{
             right: 35px;
-            bottom: 7px;
+            bottom: 10px;
                 
             }
         .group__btn{
-                padding: 10px 20px;
+            padding: 15px 30px;
             }
         .form-group2{
-            padding:0;
+            margin: 25px;
+        
+        }
+        .menu__link{
+            padding-left: 35px;
+        }
+        .navbar-toggler{
+            margin-left: 35px;
+        }
+        .nav-item a{
+            margin-left: 35px;
         }
         }
     @media screen and (max-width:320px){
@@ -742,6 +770,12 @@ footer{
         }
         .primary__title{
             font-size: 24px;
+        }
+        .form-group2{
+            margin: 40px;
+        }
+        .btn-form{
+            width: 210px;
         }
     }
 
