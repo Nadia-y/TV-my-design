@@ -37,36 +37,36 @@ document.getElementById('filter').style.display = state;
 }
 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-	$("#form_one").submit(function() {
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
-			alert("Спасибо за заявку! Мы свяжемся с Вами в течении 30 минут");
-			$("#form_one").trigger("reset");
-		});
-		return false;
-	});
+// 	$("#form_one").submit(function() {
+// 		$.ajax({
+// 			type: "POST",
+// 			url: "mail.php",
+// 			data: $(this).serialize()
+// 		}).done(function() {
+// 			$(this).find("input").val("");
+// 			alert("Спасибо за заявку! Мы свяжемся с Вами в течении 30 минут");
+// 			$("#form_one").trigger("reset");
+// 		});
+// 		return false;
+// 	});
 	
-});
+// });
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
-	$("#form").submit(function() {
-		$.ajax({
-			type: "POST",
-			url: "mail.php",
-			data: $(this).serialize()
-		}).done(function() {
-			$(this).find("input").val("");
-			alert("Спасибо за заявку! Мы свяжемся с Вами в течении 30 минут");
-			$("#form").trigger("reset");
-		});
-		return false;
-	});
+// 	$("#form").submit(function() {
+// 		$.ajax({
+// 			type: "POST",
+// 			url: "mail.php",
+// 			data: $(this).serialize()
+// 		}).done(function() {
+// 			// $(this).find("input").val("");
+// 			" location.href = 'thank-you.html'; "
+// 			$("#form").trigger("reset");
+// 		});
+// 		return false;
+// 	});
 	
-});
+// });
